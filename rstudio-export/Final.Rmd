@@ -1,0 +1,67 @@
+---
+title: "Final Presentation"
+author: "Author: Laurel Brawley"
+date: "`r format(Sys.time(), '%B %d, %Y @ %I:%M %p')`"
+output: ioslides_presentation
+---
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+## Packages Used
+
+
+## World Happiness Report 2022
+
+I got my data set from https://www.kaggle.com/code/prakhosha/world-happiness-analysis
+
+This data was last updated on April 20th, 2022.
+
+**Variables in the Dataset:**
+
+*Happiest_Countries: top 10 happiest countries in the world
+
+*Saddest_Countries: last 10 countries ranked in happiness in the world
+
+*Full: general rankings of the countries
+
+*Score: the score of the country
+
+
+
+
+##
+```{r}
+Happiest_Countries <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+Score <- c(7.821, 7.636, 7.557, 7.512, 7.415, 7.404, 7.384, 7.365, 7.364, 7.2)
+
+plot(Happiest_Countries, Score)
+```
+
+Top 10 Happiest Countries: Finland, Denmark, Iceland, Swizterland, Netherlands, Luxemburg, Sweden, Norway, Israel, and New Zealand
+
+##
+```{r}
+Unhappiest_Countries <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+Score2 <- c(2.404, 2.955, 2.995, 3.268, 3.471, 3.512, 3.574, 3.702, 3.750, 3.760)
+
+plot(Unhappiest_Countries, Score2)
+```
+
+Top 10 Saddest Countries: Afghanistan, Lebanon, Zimbabwe, Rwanda, Botswana, Lesotho, Sierra Leone, Tanzania, Malawi, Zambia.
+
+##
+```{r}
+Full <- c(1, 25, 50, 75, 100, 125, 146)
+Score3 <- c(7.821, 6.523, 6.106, 5.547, 5.06, 4.396, 2.404)
+
+plot(Score3, Full, type = "l")
+```
+
+This final graph shows the full scale of happiness as it goes through all the countries of the world.
+The United States is 16th, with a score of 6.977

@@ -1,0 +1,27 @@
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(tibble)
+```
+
+
+```{r}
+Happiest_Countries <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+Score <- c(7.821, 7.636, 7.557, 7.512, 7.415, 7.404, 7.384, 7.365, 7.364, 7.2)
+
+plot(Happiest_Countries, Score)
+```
+
+```{r}
+Unhappiest_Countries <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+Score2 <- c(2.404, 2.955, 2.995, 3.268, 3.471, 3.512, 3.574, 3.702, 3.750, 3.760)
+
+plot(Score2, Unhappiest_Countries)
+```
+
+```{r}
+Full <- c(1, 25, 50, 75, 100, 125, 146)
+Score3 <- c(7.821, 6.523, 6.106, 5.547, 5.06, 4.396, 2.404)
+
+plot(Score3, Full, type = "l")
+```
